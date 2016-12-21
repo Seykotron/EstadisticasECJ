@@ -1,0 +1,4949 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 0.9758940312500756
+ValidationFitness: 0.09790717538138186
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Mayor"];
+n00[label = "Maximo"];
+n0 -> n00;
+n01[label = "Min2"];
+n0 -> n01;
+n -> n0;
+n1[label = "Not"];
+n10[label = "Or"];
+n100[label = "Menor"];
+n1000[label = "Roc12"];
+n100 -> n1000;
+n1001[label = "LR"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "ADF1"];
+n1010[label = "Mayor"];
+n10100[label = "Media10"];
+n1010 -> n10100;
+n10101[label = "Maximo"];
+n1010 -> n10101;
+n101 -> n1010;
+n1011[label = "And"];
+n10110[label = "Menor"];
+n101100[label = "Min2"];
+n10110 -> n101100;
+n101101[label = "Media5"];
+n10110 -> n101101;
+n1011 -> n10110;
+n10111[label = "And"];
+n101110[label = "Mayor"];
+n1011100[label = "Roc12"];
+n101110 -> n1011100;
+n1011101[label = "Min2"];
+n101110 -> n1011101;
+n10111 -> n101110;
+n101111[label = "Mayor"];
+n1011110[label = "Min2"];
+n101111 -> n1011110;
+n1011111[label = "Minimo"];
+n101111 -> n1011111;
+n10111 -> n101111;
+n1011 -> n10111;
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n -> n1;
+}
+ (Or (Mayor Maximo Min2) (Not (Or (Menor Roc12
+     LR) (ADF1 (Mayor Media10 Maximo) (And (Menor
+     Min2 Media5) (And (Mayor Roc12 Min2) (Mayor
+     Min2 Minimo)))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "Or"];
+n00[label = "Or"];
+n000[label = "Menor"];
+n0000[label = "ARG0"];
+n000 -> n0000;
+n0001[label = "Min2"];
+n000 -> n0001;
+n00 -> n000;
+n001[label = "And"];
+n0010[label = "Or"];
+n00100[label = "Mayor"];
+n001000[label = "Cierre"];
+n00100 -> n001000;
+n001001[label = "Media10"];
+n00100 -> n001001;
+n0010 -> n00100;
+n00101[label = "Menor"];
+n001010[label = "Apertura"];
+n00101 -> n001010;
+n001011[label = "Maximo"];
+n00101 -> n001011;
+n0010 -> n00101;
+n001 -> n0010;
+n0011[label = "ARG1"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Maximo"];
+n01 -> n010;
+n011[label = "Media2"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (Or (Or (Menor ARG0 Min2) (And (Or (Mayor
+     Cierre Media10) (Menor Apertura Maximo))
+     ARG1)) (Mayor Maximo Media2)))
+Fecha: Sat Dec 03 02:07:36 CET 2016
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0370456360983178
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Apertura"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor UR Apertura)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:37 CET 2016
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0370456360983178
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Apertura"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor UR Apertura)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:38 CET 2016
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0370456360983178
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Apertura"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor UR Apertura)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:39 CET 2016
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0370456360983178
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Apertura"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor UR Apertura)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:40 CET 2016
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0370456360983178
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Apertura"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor UR Apertura)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:40 CET 2016
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0906701045461138
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:41 CET 2016
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0906701045461138
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:41 CET 2016
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0906701045461138
+ValidationFitness: 0.06052352863360101
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Media10"];
+n0100 -> n01000;
+n01001[label = "Cierre"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Media10 Cierre)) (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:42 CET 2016
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.0982133703572126
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Menor"];
+n0100[label = "Maximo"];
+n010 -> n0100;
+n0101[label = "Minimo"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "Mayor"];
+n0110[label = "Min1"];
+n011 -> n0110;
+n0111[label = "LR"];
+n011 -> n0111;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Menor
+     Maximo Minimo) (Mayor Min1 LR))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:42 CET 2016
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1215520865173128
+ValidationFitness: 0.09901037634972233
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Min1"];
+n0001 -> n00010;
+n00011[label = "Maximo"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Menor"];
+n0100[label = "Mx1"];
+n010 -> n0100;
+n0101[label = "Apertura"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Menor Min1 Maximo))) (Or (Menor Mx1 Apertura)
+     (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:43 CET 2016
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1215520865173128
+ValidationFitness: 0.09901037634972233
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Min1"];
+n0001 -> n00010;
+n00011[label = "Maximo"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Menor"];
+n0100[label = "Mx1"];
+n010 -> n0100;
+n0101[label = "Apertura"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Menor Min1 Maximo))) (Or (Menor Mx1 Apertura)
+     (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:44 CET 2016
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1215520865173128
+ValidationFitness: 0.09901037634972233
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Min1"];
+n0001 -> n00010;
+n00011[label = "Maximo"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Menor"];
+n0100[label = "Mx1"];
+n010 -> n0100;
+n0101[label = "Apertura"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Menor Min1 Maximo))) (Or (Menor Mx1 Apertura)
+     (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:45 CET 2016
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1215520865173128
+ValidationFitness: 0.09901037634972233
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Min1"];
+n0001 -> n00010;
+n00011[label = "Maximo"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Menor"];
+n0100[label = "Mx1"];
+n010 -> n0100;
+n0101[label = "Apertura"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Menor"];
+n01100[label = "Media5"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Menor Min1 Maximo))) (Or (Menor Mx1 Apertura)
+     (Not (Menor Media5 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:45 CET 2016
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1433888254167084
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Menor"];
+n000100[label = "Roc12"];
+n00010 -> n000100;
+n000101[label = "Roc3"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Media3"];
+n01 -> n010;
+n011[label = "Maximo"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Menor Roc12 Roc3)))) (Mayor Media3
+     Maximo)))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:46 CET 2016
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1645017738916694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Roc12"];
+n0100 -> n01000;
+n01001[label = "Roc3"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Media3"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Roc12 Roc3)) (Not (Mayor UR Media3)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:47 CET 2016
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1645017738916694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Roc12"];
+n0100 -> n01000;
+n01001[label = "Roc3"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Media3"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Roc12 Roc3)) (Not (Mayor UR Media3)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:48 CET 2016
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1645017738916694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Roc12"];
+n0100 -> n01000;
+n01001[label = "Roc3"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Media3"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Roc12 Roc3)) (Not (Mayor UR Media3)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:49 CET 2016
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1645017738916694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Roc12"];
+n0100 -> n01000;
+n01001[label = "Roc3"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Media3"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Roc12 Roc3)) (Not (Mayor UR Media3)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:49 CET 2016
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1645017738916694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "Menor"];
+n00000[label = "Min2"];
+n0000 -> n00000;
+n00001[label = "Media10"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Mayor"];
+n01000[label = "Roc12"];
+n0100 -> n01000;
+n01001[label = "Roc3"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "UR"];
+n0110 -> n01100;
+n01101[label = "Media3"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (Menor Min2 Media10)
+     (Not (Mayor Min1 Apertura)))) (Or (Not (Mayor
+     Roc12 Roc3)) (Not (Mayor UR Media3)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:50 CET 2016
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.170592742434479
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "ADF1"];
+n00000[label = "Mayor"];
+n000000[label = "LR"];
+n00000 -> n000000;
+n000001[label = "Maximo"];
+n00000 -> n000001;
+n0000 -> n00000;
+n00001[label = "Menor"];
+n000010[label = "Min2"];
+n00001 -> n000010;
+n000011[label = "Media3"];
+n00001 -> n000011;
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Menor"];
+n01000[label = "Media2"];
+n0100 -> n01000;
+n01001[label = "Media5"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "Media3"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (ADF1 (Mayor LR Maximo)
+     (Menor Min2 Media3)) (Not (Mayor Min1 Apertura))))
+     (Or (Not (Menor Media2 Media5)) (Not (Mayor
+         Media3 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:51 CET 2016
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.170592742434479
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "ADF1"];
+n00000[label = "Mayor"];
+n000000[label = "LR"];
+n00000 -> n000000;
+n000001[label = "Maximo"];
+n00000 -> n000001;
+n0000 -> n00000;
+n00001[label = "Menor"];
+n000010[label = "Min2"];
+n00001 -> n000010;
+n000011[label = "Media3"];
+n00001 -> n000011;
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Menor"];
+n01000[label = "Media2"];
+n0100 -> n01000;
+n01001[label = "Media5"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "Media3"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (ADF1 (Mayor LR Maximo)
+     (Menor Min2 Media3)) (Not (Mayor Min1 Apertura))))
+     (Or (Not (Menor Media2 Media5)) (Not (Mayor
+         Media3 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:51 CET 2016
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1748782718225694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "ADF1"];
+n00000[label = "Mayor"];
+n000000[label = "LR"];
+n00000 -> n000000;
+n000001[label = "Maximo"];
+n00000 -> n000001;
+n0000 -> n00000;
+n00001[label = "Menor"];
+n000010[label = "Min2"];
+n00001 -> n000010;
+n000011[label = "Media3"];
+n00001 -> n000011;
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Minimo"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Menor"];
+n01000[label = "Media2"];
+n0100 -> n01000;
+n01001[label = "Media5"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "Media3"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (ADF1 (Mayor LR Maximo)
+     (Menor Min2 Media3)) (Not (Mayor Min1 Minimo))))
+     (Or (Not (Menor Media2 Media5)) (Not (Mayor
+         Media3 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:52 CET 2016
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1748782718225694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "ADF1"];
+n00000[label = "Mayor"];
+n000000[label = "LR"];
+n00000 -> n000000;
+n000001[label = "Maximo"];
+n00000 -> n000001;
+n0000 -> n00000;
+n00001[label = "Menor"];
+n000010[label = "Min2"];
+n00001 -> n000010;
+n000011[label = "Media3"];
+n00001 -> n000011;
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Minimo"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Menor"];
+n01000[label = "Media2"];
+n0100 -> n01000;
+n01001[label = "Media5"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "Media3"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (ADF1 (Mayor LR Maximo)
+     (Menor Min2 Media3)) (Not (Mayor Min1 Minimo))))
+     (Or (Not (Menor Media2 Media5)) (Not (Mayor
+         Media3 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:53 CET 2016
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.1748782718225694
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Not"];
+n0[label = "And"];
+n00[label = "Not"];
+n000[label = "ADF1"];
+n0000[label = "ADF1"];
+n00000[label = "Mayor"];
+n000000[label = "LR"];
+n00000 -> n000000;
+n000001[label = "Maximo"];
+n00000 -> n000001;
+n0000 -> n00000;
+n00001[label = "Menor"];
+n000010[label = "Min2"];
+n00001 -> n000010;
+n000011[label = "Media3"];
+n00001 -> n000011;
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Minimo"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Not"];
+n0100[label = "Menor"];
+n01000[label = "Media2"];
+n0100 -> n01000;
+n01001[label = "Media5"];
+n0100 -> n01001;
+n010 -> n0100;
+n01 -> n010;
+n011[label = "Not"];
+n0110[label = "Mayor"];
+n01100[label = "Media3"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+}
+ (Not (And (Not (ADF1 (ADF1 (Mayor LR Maximo)
+     (Menor Min2 Media3)) (Not (Mayor Min1 Minimo))))
+     (Or (Not (Menor Media2 Media5)) (Not (Mayor
+         Media3 Min2)))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:53 CET 2016
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2130476567296526
+ValidationFitness: 0.10235554919066772
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 Media2))
+     (Or (Mayor Media2 Media2) (ADF1 (Menor Media3
+         Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:54 CET 2016
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2130476567296526
+ValidationFitness: 0.10235554919066772
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 Media2))
+     (Or (Mayor Media2 Media2) (ADF1 (Menor Media3
+         Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:54 CET 2016
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2130476567296526
+ValidationFitness: 0.10235554919066772
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 Media2))
+     (Or (Mayor Media2 Media2) (ADF1 (Menor Media3
+         Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:55 CET 2016
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2181241309593795
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "Apertura"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor Apertura Min1)
+     (ADF1 (Or (Mayor Min1 Apertura) (Menor Min1
+         Media2)) (Or (Mayor Media2 Media2) (ADF1
+         (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:55 CET 2016
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2181241309593795
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "Apertura"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor Apertura Min1)
+     (ADF1 (Or (Mayor Min1 Apertura) (Menor Min1
+         Media2)) (Or (Mayor Media2 Media2) (ADF1
+         (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:56 CET 2016
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2181241309593795
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "Apertura"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor Apertura Min1)
+     (ADF1 (Or (Mayor Min1 Apertura) (Menor Min1
+         Media2)) (Or (Mayor Media2 Media2) (ADF1
+         (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:57 CET 2016
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2181241309593795
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "And"];
+n0000[label = "Mayor"];
+n00000[label = "Maximo"];
+n0000 -> n00000;
+n00001[label = "Min2"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "LR"];
+n0001 -> n00010;
+n00011[label = "Mx1"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "Apertura"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (And (Mayor Maximo Min2) (Menor
+     LR Mx1)) (Menor Media10 UR)) (Mayor Roc12
+     Roc3)) (Or (Mayor Apertura Min1) (ADF1 (Or
+     (Mayor Min1 Apertura) (Menor Min1 Media2))
+     (Or (Mayor Media2 Media2) (ADF1 (Menor Media3
+         Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:58 CET 2016
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2181241309593795
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "Apertura"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Media2"];
+n1110 -> n11100;
+n11101[label = "Media2"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor Apertura Min1)
+     (ADF1 (Or (Mayor Min1 Apertura) (Menor Min1
+         Media2)) (Or (Mayor Media2 Media2) (ADF1
+         (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:58 CET 2016
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2262953096390017
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Or"];
+n00[label = "ADF1"];
+n000[label = "And"];
+n0000[label = "Menor"];
+n00000[label = "Minimo"];
+n0000 -> n00000;
+n00001[label = "Media3"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Mayor"];
+n0010[label = "Roc12"];
+n001 -> n0010;
+n0011[label = "Roc3"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Mayor"];
+n0100[label = "Media2"];
+n010 -> n0100;
+n0101[label = "Media2"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "ADF1"];
+n0110[label = "Mayor"];
+n01100[label = "Mx1"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n0111[label = "Menor"];
+n01110[label = "Media5"];
+n0111 -> n01110;
+n01111[label = "Min2"];
+n0111 -> n01111;
+n011 -> n0111;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "ADF1"];
+n10[label = "Or"];
+n100[label = "Not"];
+n1000[label = "Menor"];
+n10000[label = "Media10"];
+n1000 -> n10000;
+n10001[label = "UR"];
+n1000 -> n10001;
+n100 -> n1000;
+n10 -> n100;
+n101[label = "ADF1"];
+n1010[label = "Not"];
+n10100[label = "Mayor"];
+n101000[label = "Maximo"];
+n10100 -> n101000;
+n101001[label = "UR"];
+n10100 -> n101001;
+n1010 -> n10100;
+n101 -> n1010;
+n1011[label = "Not"];
+n10110[label = "Mayor"];
+n101100[label = "Apertura"];
+n10110 -> n101100;
+n101101[label = "LR"];
+n10110 -> n101101;
+n1011 -> n10110;
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "Mayor"];
+n110[label = "Maximo"];
+n11 -> n110;
+n111[label = "Min2"];
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (Or (ADF1 (And (Menor Minimo Media3)
+     (Menor Media10 UR)) (Mayor Roc12 Roc3)) (Or
+     (Mayor Media2 Media2) (ADF1 (Mayor Mx1 Min2)
+     (Menor Media5 Min2)))) (ADF1 (Or (Not (Menor
+     Media10 UR)) (ADF1 (Not (Mayor Maximo UR))
+     (Not (Mayor Apertura LR)))) (Mayor Maximo
+     Min2)))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:07:59 CET 2016
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2262953096390017
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Or"];
+n00[label = "ADF1"];
+n000[label = "And"];
+n0000[label = "Menor"];
+n00000[label = "Minimo"];
+n0000 -> n00000;
+n00001[label = "Media3"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Mayor"];
+n0010[label = "Roc12"];
+n001 -> n0010;
+n0011[label = "Roc3"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Or"];
+n010[label = "Mayor"];
+n0100[label = "Media2"];
+n010 -> n0100;
+n0101[label = "Media2"];
+n010 -> n0101;
+n01 -> n010;
+n011[label = "ADF1"];
+n0110[label = "Mayor"];
+n01100[label = "Mx1"];
+n0110 -> n01100;
+n01101[label = "Min2"];
+n0110 -> n01101;
+n011 -> n0110;
+n0111[label = "Menor"];
+n01110[label = "Media5"];
+n0111 -> n01110;
+n01111[label = "Min2"];
+n0111 -> n01111;
+n011 -> n0111;
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "ADF1"];
+n10[label = "Or"];
+n100[label = "Not"];
+n1000[label = "Menor"];
+n10000[label = "Media10"];
+n1000 -> n10000;
+n10001[label = "UR"];
+n1000 -> n10001;
+n100 -> n1000;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Min2"];
+n101 -> n1010;
+n1011[label = "Minimo"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "Mayor"];
+n110[label = "Maximo"];
+n11 -> n110;
+n111[label = "Min2"];
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (Or (ADF1 (And (Menor Minimo Media3)
+     (Menor Media10 UR)) (Mayor Roc12 Roc3)) (Or
+     (Mayor Media2 Media2) (ADF1 (Mayor Mx1 Min2)
+     (Menor Media5 Min2)))) (ADF1 (Or (Not (Menor
+     Media10 UR)) (Menor Min2 Minimo)) (Mayor
+     Maximo Min2)))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:00 CET 2016
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "UR"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 UR))
+     (Or (Not (Menor Maximo Media5)) (ADF1 (Menor
+         Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:01 CET 2016
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "UR"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 UR))
+     (Or (Not (Menor Maximo Media5)) (ADF1 (Menor
+         Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:02 CET 2016
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Mayor"];
+n1100[label = "LR"];
+n110 -> n1100;
+n1101[label = "Min1"];
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Mayor LR Min1) (Or (Not (Menor Maximo Media5))
+     (ADF1 (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:03 CET 2016
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "UR"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Or (Mayor Min1 Apertura) (Menor Min1 UR))
+     (Or (Not (Menor Maximo Media5)) (ADF1 (Menor
+         Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:04 CET 2016
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Mayor"];
+n1100[label = "Mx1"];
+n110 -> n1100;
+n1101[label = "Min2"];
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Mayor Mx1 Min2) (Or (Not (Menor Maximo Media5))
+     (ADF1 (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:05 CET 2016
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Mayor"];
+n1100[label = "LR"];
+n110 -> n1100;
+n1101[label = "Min1"];
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Menor Media10 UR))
+     (Mayor Roc12 Roc3)) (Or (Mayor LR Min1) (ADF1
+     (Mayor LR Min1) (Or (Not (Menor Maximo Media5))
+     (ADF1 (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:06 CET 2016
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Or"];
+n0010[label = "Mayor"];
+n00100[label = "Roc12"];
+n0010 -> n00100;
+n00101[label = "Roc3"];
+n0010 -> n00101;
+n001 -> n0010;
+n0011[label = "ADF1"];
+n00110[label = "Menor"];
+n001100[label = "Media3"];
+n00110 -> n001100;
+n001101[label = "Mx2"];
+n00110 -> n001101;
+n0011 -> n00110;
+n00111[label = "Menor"];
+n001110[label = "Media5"];
+n00111 -> n001110;
+n001111[label = "Min2"];
+n00111 -> n001111;
+n0011 -> n00111;
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "UR"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Or (Mayor Roc12
+     Roc3) (ADF1 (Menor Media3 Mx2) (Menor Media5
+     Min2)))) (Mayor Roc12 Roc3)) (Or (Mayor LR
+     Min1) (ADF1 (Or (Mayor Min1 Apertura) (Menor
+     Min1 UR)) (Or (Not (Menor Maximo Media5))
+     (ADF1 (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:07 CET 2016
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.257721455163035
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Not"];
+n00010[label = "Mayor"];
+n000100[label = "Min1"];
+n00010 -> n000100;
+n000101[label = "Apertura"];
+n00010 -> n000101;
+n0001 -> n00010;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Or"];
+n0010[label = "Mayor"];
+n00100[label = "Roc12"];
+n0010 -> n00100;
+n00101[label = "Roc3"];
+n0010 -> n00101;
+n001 -> n0010;
+n0011[label = "ADF1"];
+n00110[label = "Menor"];
+n001100[label = "Media3"];
+n00110 -> n001100;
+n001101[label = "Mx2"];
+n00110 -> n001101;
+n0011 -> n00110;
+n00111[label = "Menor"];
+n001110[label = "Media5"];
+n00111 -> n001110;
+n001111[label = "Min2"];
+n00111 -> n001111;
+n0011 -> n00111;
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "Roc12"];
+n01 -> n010;
+n011[label = "Roc3"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "Mayor"];
+n100[label = "LR"];
+n10 -> n100;
+n101[label = "Min1"];
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "Min1"];
+n1100 -> n11000;
+n11001[label = "Apertura"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "UR"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Not"];
+n11100[label = "Menor"];
+n111000[label = "Maximo"];
+n11100 -> n111000;
+n111001[label = "Media5"];
+n11100 -> n111001;
+n1110 -> n11100;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Not
+     (Mayor Min1 Apertura))) (Or (Mayor Roc12
+     Roc3) (ADF1 (Menor Media3 Mx2) (Menor Media5
+     Min2)))) (Mayor Roc12 Roc3)) (Or (Mayor LR
+     Min1) (ADF1 (Or (Mayor Min1 Apertura) (Menor
+     Min1 UR)) (Or (Not (Menor Maximo Media5))
+     (ADF1 (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:08 CET 2016
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:10 CET 2016
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:11 CET 2016
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:13 CET 2016
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:14 CET 2016
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "ADF1"];
+n00010[label = "Menor"];
+n000100[label = "Media3"];
+n00010 -> n000100;
+n000101[label = "Mx2"];
+n00010 -> n000101;
+n0001 -> n00010;
+n00011[label = "Menor"];
+n000110[label = "Media5"];
+n00011 -> n000110;
+n000111[label = "Min2"];
+n00011 -> n000111;
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "Maximo"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2)))
+     (Menor Media10 UR)) (Mayor LR Min1)) (Or
+     (ADF1 (Mayor Maximo Min1) (Menor Media3 Apertura))
+     (ADF1 (Or (Mayor LR Roc3) (Menor Min1 Media2))
+         (Or (Mayor Roc12 Roc3) (ADF1 (Menor Media3
+             Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:15 CET 2016
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:17 CET 2016
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "ADF1"];
+n00010[label = "Menor"];
+n000100[label = "Media3"];
+n00010 -> n000100;
+n000101[label = "Mx2"];
+n00010 -> n000101;
+n0001 -> n00010;
+n00011[label = "Menor"];
+n000110[label = "Media5"];
+n00011 -> n000110;
+n000111[label = "Min2"];
+n00011 -> n000111;
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "Maximo"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2)))
+     (Menor Media10 UR)) (Mayor LR Min1)) (Or
+     (ADF1 (Mayor Maximo Min1) (Menor Media3 Apertura))
+     (ADF1 (Or (Mayor LR Roc3) (Menor Min1 Media2))
+         (Or (Mayor Roc12 Roc3) (ADF1 (Menor Media3
+             Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:18 CET 2016
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "ADF1"];
+n00010[label = "Menor"];
+n000100[label = "Media3"];
+n00010 -> n000100;
+n000101[label = "Mx2"];
+n00010 -> n000101;
+n0001 -> n00010;
+n00011[label = "Menor"];
+n000110[label = "Media5"];
+n00011 -> n000110;
+n000111[label = "Min2"];
+n00011 -> n000111;
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "Maximo"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2)))
+     (Menor Media10 UR)) (Mayor LR Min1)) (Or
+     (ADF1 (Mayor Maximo Min1) (Menor Media3 Apertura))
+     (ADF1 (Or (Mayor LR Roc3) (Menor Min1 Media2))
+         (Or (Mayor Roc12 Roc3) (ADF1 (Menor Media3
+             Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:20 CET 2016
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: 1.2650021327396674
+ValidationFitness: 0.10381189264188107
+Tree 0:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "ADF1"];
+n00[label = "And"];
+n000[label = "ADF1"];
+n0000[label = "Mayor"];
+n00000[label = "Min1"];
+n0000 -> n00000;
+n00001[label = "LR"];
+n0000 -> n00001;
+n000 -> n0000;
+n0001[label = "Menor"];
+n00010[label = "Media10"];
+n0001 -> n00010;
+n00011[label = "UR"];
+n0001 -> n00011;
+n000 -> n0001;
+n00 -> n000;
+n001[label = "Menor"];
+n0010[label = "Media10"];
+n001 -> n0010;
+n0011[label = "UR"];
+n001 -> n0011;
+n00 -> n001;
+n0 -> n00;
+n01[label = "Mayor"];
+n010[label = "LR"];
+n01 -> n010;
+n011[label = "Min1"];
+n01 -> n011;
+n0 -> n01;
+n -> n0;
+n1[label = "Or"];
+n10[label = "ADF1"];
+n100[label = "Mayor"];
+n1000[label = "LR"];
+n100 -> n1000;
+n1001[label = "Min1"];
+n100 -> n1001;
+n10 -> n100;
+n101[label = "Menor"];
+n1010[label = "Media3"];
+n101 -> n1010;
+n1011[label = "Apertura"];
+n101 -> n1011;
+n10 -> n101;
+n1 -> n10;
+n11[label = "ADF1"];
+n110[label = "Or"];
+n1100[label = "Mayor"];
+n11000[label = "LR"];
+n1100 -> n11000;
+n11001[label = "Roc3"];
+n1100 -> n11001;
+n110 -> n1100;
+n1101[label = "Menor"];
+n11010[label = "Min1"];
+n1101 -> n11010;
+n11011[label = "Media2"];
+n1101 -> n11011;
+n110 -> n1101;
+n11 -> n110;
+n111[label = "Or"];
+n1110[label = "Mayor"];
+n11100[label = "Roc12"];
+n1110 -> n11100;
+n11101[label = "Roc3"];
+n1110 -> n11101;
+n111 -> n1110;
+n1111[label = "ADF1"];
+n11110[label = "Menor"];
+n111100[label = "Media3"];
+n11110 -> n111100;
+n111101[label = "Mx2"];
+n11110 -> n111101;
+n1111 -> n11110;
+n11111[label = "Menor"];
+n111110[label = "Media5"];
+n11111 -> n111110;
+n111111[label = "Min2"];
+n11111 -> n111111;
+n1111 -> n11111;
+n111 -> n1111;
+n11 -> n111;
+n1 -> n11;
+n -> n1;
+}
+ (Or (ADF1 (And (ADF1 (Mayor Min1 LR) (Menor
+     Media10 UR)) (Menor Media10 UR)) (Mayor LR
+     Min1)) (Or (ADF1 (Mayor LR Min1) (Menor Media3
+     Apertura)) (ADF1 (Or (Mayor LR Roc3) (Menor
+     Min1 Media2)) (Or (Mayor Roc12 Roc3) (ADF1
+     (Menor Media3 Mx2) (Menor Media5 Min2))))))
+Tree 1:
+digraph g {
+graph [ordering=out];
+node [shape=rectangle];
+n[label = "Or"];
+n0[label = "Menor"];
+n00[label = "LR"];
+n0 -> n00;
+n01[label = "ARG0"];
+n0 -> n01;
+n -> n0;
+n1[label = "ARG1"];
+n -> n1;
+}
+ (Or (Menor LR ARG0) ARG1)
+Fecha: Sat Dec 03 02:08:20 CET 2016
